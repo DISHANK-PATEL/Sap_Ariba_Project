@@ -54,7 +54,8 @@
 
         Conduct end-to-end testing in a sandbox environment.
 
-Current Progress Screenshots:
+
+## Current Progress Screenshots:
 ![image](https://github.com/user-attachments/assets/ca5b126e-0957-44f7-9e17-14524542b784)
 ![image](https://github.com/user-attachments/assets/9ea04693-8a27-444a-804d-833241870df9)
 
