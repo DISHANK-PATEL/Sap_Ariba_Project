@@ -1,15 +1,64 @@
-# Dashboard
+✅ What’s Done
 
-A modern, interactive dashboard for SAP Ariba data visualization and AI-powered analysis. Built with React, TypeScript, and Node.js.
+    Data Ingestion & Display
 
-## ✨ Features
+        Successfully fetch sourcing-event JSON (Task→Workspace→RFXDocument) from the Ariba APIs.
 
-- **📊 Real-time Data Fetching** - Fetch SAP Ariba event data using Task IDs
-- **🤖 AI-Powered Chat** - Interactive chat interface for data analysis and insights
-- **📄 PDF Export** - Generate and download PDF reports of your data
-- **🎨 Modern UI** - Beautiful, responsive design with dark theme and animations
-- **🔄 Real-time Updates** - Live data updates and chat responses
-- **📱 Responsive Design** - Works seamlessly on desktop and mobile devices
+        Render raw and structured fields in the React frontend.
+
+    AI Chat Integration
+
+        Piped fetched data into the Gemini 2.5 Flash endpoint.
+
+        Users can ask free-form questions about the event inside the app.
+
+🔄 In Progress
+
+    LLM Optimization
+
+        Improving prompt engineering and context-management to handle larger data volumes.
+
+        Evaluating model upgrades (e.g. Gemini Pro / GPT-4 Turbo 32K) for high-capacity scenarios.
+
+    Export & Reporting Features
+
+        AI Chat Download: capture and save entire chat transcript.
+
+        AI Summary Download: export the model’s structured summary.
+
+        Multi-Format Reports: CSV, JSON, PDF, and Markdown exports of both raw data and AI-generated insights.
+
+    Interactive Analytics
+
+        Build dynamic charts (bar, line, pie) with real-time filtering.
+
+        Enable hover tooltips, zoom, and drill-down for key metrics.
+
+    Complete Export Functionality 
+
+        Wire up client-side libraries (json2csv, jsPDF, etc.) for seamless downloads.
+
+        Provide UI controls for format selection.
+
+    Visual Analytics Dashboard 
+
+        Integrate recharts or react-chartjs-2 for interactive charts.
+
+        Allow users to slice-and-dice by custom fields, date ranges, and spend categories.
+
+    Chrome Extension Packaging 
+
+        Adapt the React UI into a Manifest v3 extension.
+
+        Implement content scripts, background messaging, and host permissions.
+
+        Conduct end-to-end testing in a sandbox environment.
+
+Current Progress Screenshots:
+![image](https://github.com/user-attachments/assets/ca5b126e-0957-44f7-9e17-14524542b784)
+![image](https://github.com/user-attachments/assets/9ea04693-8a27-444a-804d-833241870df9)
+
+
 
 ## 🚀 Quick Start
 
@@ -24,7 +73,7 @@ A modern, interactive dashboard for SAP Ariba data visualization and AI-powered 
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/DISHANK-PATEL/Sap_Ariba_Project.git
    cd Project_Chrome_Extension
    ```
 
@@ -88,24 +137,3 @@ PORT=3001
 
 3. **Open your browser**
    Navigate to `http://localhost:8080` to access the dashboard
-
-## 📖 Usage Guide
-
-### Fetching Data
-
-1. **Enter a Task ID** in the input field
-2. **Click "Fetch Data"** to retrieve SAP Ariba event data
-3. **View the data** in the interactive Data Viewer component
-
-### Using the AI Chat
-
-1. **Click "Chat with Data"** to open the chat interface
-2. **Type your questions** about the fetched data
-3. **Get AI-powered insights** and analysis in real-time
-
-### Exporting Data
-
-1. **Click "Download PDF"** to generate a PDF report
-2. **Save the report** to your local machine
-
-## ��️ Project Structure
